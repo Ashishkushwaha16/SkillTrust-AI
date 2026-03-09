@@ -34,9 +34,9 @@ const ProjectCard = ({ project }) => {
             <CheckCircle className="w-4 h-4" />
             <span>{project.verificationScore || 0}% verified</span>
           </span>
-          {project.language && (
+          {project.primaryLanguage && (
             <span className="px-2 py-1 bg-primary-500/10 text-primary-400 rounded">
-              {project.language}
+              {project.primaryLanguage}
             </span>
           )}
         </div>

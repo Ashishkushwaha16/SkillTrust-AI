@@ -266,7 +266,7 @@ GET    /api/reviews/project/:projectId # Get project reviews
 
 The trust score is calculated using three weighted components:
 
-```javascript
+```js
 Trust Score = (GitHub Score × 0.4) + (Project Score × 0.3) + (Peer Rating × 0.3)
 ```
 
@@ -285,14 +285,14 @@ Trust Score = (GitHub Score × 0.4) + (Project Score × 0.3) + (Peer Rating × 0
 ## 📊 Matching Algorithm
 
 **Cosine Similarity:**
-```javascript
+```js
 similarity = (A · B) / (||A|| × ||B||)
 ```
 - Measures skill overlap between users
 - Higher score = more similar skill sets
 
 **Complementary Score:**
-```javascript
+```js
 complementaryScore = (unique_skills_count / total_skills) × 100
 ```
 - Identifies users with different but valuable skills
@@ -345,7 +345,7 @@ complementaryScore = (unique_skills_count / total_skills) × 100
 
 Centralized error handling with custom error responses:
 
-```javascript
+```js
 {
   success: false,
   error: "Error message"
@@ -355,7 +355,7 @@ Centralized error handling with custom error responses:
 All API responses follow this structure:
 
 **Success:**
-```javascript
+```js
 {
   success: true,
   data: { /* response data */ }
@@ -363,7 +363,7 @@ All API responses follow this structure:
 ```
 
 **Error:**
-```javascript
+```js
 {
   success: false,
   error: "Error message"

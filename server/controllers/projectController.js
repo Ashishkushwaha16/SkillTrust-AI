@@ -19,7 +19,7 @@ exports.createProject = async (req, res, next) => {
       ...req.body,
       stars: repoData.stars,
       forks: repoData.forks,
-      language: repoData.language,
+      primaryLanguage: repoData.language,
       commits: repoData.commits
     };
 

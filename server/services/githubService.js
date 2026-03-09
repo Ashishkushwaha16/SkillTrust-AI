@@ -54,7 +54,7 @@ exports.getRepositories = async (username) => {
       url: repo.html_url,
       stars: repo.stargazers_count,
       forks: repo.forks_count,
-      language: repo.language,
+      primaryLanguage: repo.language,
       updatedAt: repo.updated_at,
       createdAt: repo.created_at,
       topics: repo.topics

@@ -69,7 +69,7 @@ const projectSchema = new mongoose.Schema({
     type: Number,
     default: 0
   },
-  language: {
+  primaryLanguage: {
     type: String
   },
   status: {
@@ -90,8 +90,15 @@ const projectSchema = new mongoose.Schema({
   timestamps: true
 });
 
-// Index for search optimization
-projectSchema.index({ title: 'text', description: 'text', technologies: 'text' });
+// Index for search optimization (no language override to avoid conflict with primaryLanguage field)
+projectSchema.index({ 
+  title: 'text', 
+  description: 'text', 
+  technologies: 'text' 
+}, { 
+  default_language: 'none',
+  language_override: 'textSearchLanguage'
+});
 
 // Method to calculate verification score
 projectSchema.methods.calculateVerificationScore = function() {
