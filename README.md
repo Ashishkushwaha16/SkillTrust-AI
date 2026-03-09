@@ -1,5 +1,7 @@
 # SkillTrust AI – Verified Skill Intelligence Platform
 
+### 🚀 Hackathon Project – Web Clash Code 2026 (Uptoskills)
+
 A full-stack MERN platform that verifies users' technical skills based on GitHub activity, project contributions, and peer validation.
 
 ## 🚀 Features
@@ -118,7 +120,7 @@ SkillTrust-AI/
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/skilltrust-ai.git
+git clone https://github.com/Ashishkushwaha16/skilltrust-ai.git
 cd skilltrust-ai
 ```
 
@@ -468,7 +470,10 @@ MIT License - feel free to use this project for learning or commercial purposes.
 
 ## 👤 Author
 
-Your Name - [GitHub](https://github.com/yourusername)
+Ashish Kushwaha  
+B.Tech CSE  
+
+GitHub: https://github.com/Ashishkushwaha16
 
 ## 🤝 Contributing
 
